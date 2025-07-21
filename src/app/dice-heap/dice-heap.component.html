@@ -1,0 +1,13 @@
+<div>
+    <h3>{{count}}d{{facets}}</h3>
+    <div>
+        <button (click)="rollDiceOfHeap()">roll {{count}}d{{facets}}</button>
+    </div>
+    <div>Total: {{total}}</div>
+    <div>Rolls: {{outcome}}</div>
+    <div>
+        <button (click)="addDice(1)">add 1d{{facets}}</button>
+        <button (click)="addDice(-1)" [disabled]="count<=1">remove 1d{{facets}}</button>
+        <button (click)="removeHeap()">remove all d{{facets}}</button>
+    </div>
+</div>

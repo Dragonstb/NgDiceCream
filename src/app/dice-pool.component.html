@@ -1,0 +1,3 @@
+@for(heap of heaps; track heap) {
+    <dice-heap [facets]="heap" (removeHeapEvent)="removeHeap($event)" (rollSingleHeapEvent)="singleHeapWasRolled($event)" (heapChangedEvent)="bubbleHeapChangedEvent()"/>
+}
